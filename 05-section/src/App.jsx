@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 // const pizzaData = [
 //     {
 //         name: "Focaccia",
@@ -51,7 +50,11 @@ import React from 'react'
 // import Greeting from './components/Greeting'
 // import StatusMessage from './components/StatusMessage'
 // import Invoice from './components/Invoice'
-// import Menu from './components/Menu'
+// import Menu1 from './components/Menu1'
+
+import Header from "./components/Header"
+import Menu from "./components/Menu"
+import Footer from './components/Footer'
 
 function App() {
     return (
@@ -60,42 +63,12 @@ function App() {
             <Greeting />
             <StatusMessage />
             <Invoice />
-            <Menu /> */}
+            <Menu1 /> */}
             <Header />
             <Menu />
             <Footer />
         </div>
     )
 }
-
-function Header() {
-    return <h1>
-        Fast React Pizza Co.
-    </h1>
-}
-
-function Menu() {
-    return <div>
-        <h1>Our Menu</h1>
-        <Pizza />
-        <Pizza />
-        <Pizza />
-    </div>
-}
-
-function Footer() {
-    return <footer>
-        {new Date().toLocaleTimeString()} Pizza Restaurant is <b>currently opened</b>.
-    </footer>
-}
-
-function Pizza() {
-    return <div>
-        <img src="/pizzas/focaccia.jpg" alt="" />
-        <h1>Pizza Focaccia</h1>
-        <p>Bread with italian olive oil and rosemary</p>
-    </div>
-}
-
 
 export default App

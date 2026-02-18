@@ -1,13 +1,14 @@
 import React from 'react'
 
+import Pizza from "./Pizza"
+
 const Menu = () => {
-    return (
-        <>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-        </>
-    )
+    return <div>
+        <h1>Our Menu</h1>
+        <Pizza />
+        <Pizza />
+        <Pizza />
+    </div>
 }
 
 export default Menu
