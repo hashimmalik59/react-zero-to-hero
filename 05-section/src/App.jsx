@@ -45,20 +45,20 @@ import React from 'react'
 //     },
 // ];
 
-// components
+// Practice Components
 // import Greeting from './components/Greeting'
 // import StatusMessage from './components/StatusMessage'
 // import Invoice from './components/Invoice'
 // import Menu1 from './components/Menu1'
 // import Bulb from './practice-components/Bulb'
+// import Ticket from './practice-components/Ticket'
 
 // CSS
 import "./App.css"
-
+// Jonas Components
 import Header from "./jonas-components/Header"
 import Menu from "./jonas-components/Menu"
 import Footer from './jonas-components/Footer'
-import Ticket from './practice-components/Ticket'
 
 function App() {
     return (
@@ -69,7 +69,7 @@ function App() {
             <Invoice />
             <Menu1 /> */}
             {/* <Bulb status="on" /> */}
-            <Ticket age={17} basePrice={100} />
+            {/* <Ticket age={17} basePrice={100} /> */}
             <Header />
             <Menu />
             <Footer />
