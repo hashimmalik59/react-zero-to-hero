@@ -52,22 +52,27 @@ import React from 'react'
 // import Invoice from './components/Invoice'
 // import Menu1 from './components/Menu1'
 
+// CSS
+import "./App.css"
+
 import Header from "./components/Header"
 import Menu from "./components/Menu"
 import Footer from './components/Footer'
+import Bulb from './components/Bulb'
 
 function App() {
     return (
-        <div>
+        <div className='container'>
             {/* <Pizza />
             <Greeting />
             <StatusMessage />
             <Invoice />
             <Menu1 /> */}
+            <Bulb />
             <Header />
             <Menu />
             <Footer />
-        </div>
+        </div >
     )
 }
 
