@@ -1,7 +1,7 @@
 import React from 'react'
 
-const Bulb = () => {
-    const status = "on";
+const Bulb = (props) => {
+    const status = props.status;
 
     return (
         <div style={{
