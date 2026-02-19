@@ -69,7 +69,7 @@ function App() {
             <Invoice />
             <Menu1 /> */}
             {/* <Bulb status="on" /> */}
-            <Ticket age={18} basePrice={100} />
+            <Ticket age={17} basePrice={100} />
             <Header />
             <Menu />
             <Footer />
