@@ -54,3 +54,9 @@ footer button {
     border: none;
     padding: 5px 10px;
 }
+
+.pizza-data {
+    font-size: .75rem;
+    text-align: justify;
+    padding: 0 10px;
+}

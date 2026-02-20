@@ -1,16 +1,19 @@
 import React from 'react'
 
-const Pizza = ({ photo, name, ingredients, price }) => {
+const Pizza = ({ pizzaObj }) => {
 
     return (
-        <div className='pizza'>
-            <img src={photo} alt={name} width={"100px"} />
-            <div className='pizza-info'>
-                <h1>{name}</h1>
-                <p>{ingredients}</p>
-                <span>{price + 3}</span>
+        <>
+            <div className='pizza'>
+                <img src={pizzaObj.photoName} alt={pizzaObj.name} width={"100px"} />
+                <div className='pizza-info'>
+                    <h1>{pizzaObj.name}</h1>
+                    <p>{pizzaObj.ingredients}</p>
+                    <span>{pizzaObj.price + 3}</span>
+                    <span>{pizzaObj.soldOut}</span>
+                </div>
             </div>
-        </div>
+        </>
     )
 }
 

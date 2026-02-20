@@ -8,11 +8,11 @@ const Footer = () => {
     const isOpen = hour >= openHour && hour <= closeHour;
     return (
         <footer>
+            <button>Order Now</button>
             <small className='bg' style={{
                 color: isOpen ?
                     "green" : "red"
             }}>{new Date().toLocaleTimeString()} | {isOpen ? "Welcome we're open" : "Sorry, we're closed!"}</small>
-            <button>Order Now</button>
         </footer>
     )
 }

@@ -50,14 +50,12 @@ import Pizza from "./Pizza"
 const Menu = () => {
     return <main className='menu'>
         <h1>Our Menu</h1>
-
+        <p className='pizza-data'>Authentic Italian cuisine. 6 creative dishes to choose from, All from our stone oven, all organic, all delicious.</p>
         <div>
             {pizzaData.map(item => (
                 <Pizza
-                    photo={item.photoName}
-                    name={item.name}
-                    ingredients={item.ingredients}
-                    price={item.price}
+                    pizzaObj={item}
+                    key={item.name}
                 />
             ))}
         </div>
