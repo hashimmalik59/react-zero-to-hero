@@ -16,6 +16,11 @@
     align-items: center;
 }
 
+.main-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .menu {
     display: flex;
     flex-direction: column;
@@ -30,7 +35,7 @@
 
 .pizza {
     display: flex;
-    gap: 10px;
+    gap: 5px;
     margin: 10px 0;
 }
 
@@ -45,7 +50,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
 
 }
 
@@ -53,10 +58,11 @@ footer button {
     background-color: yellow;
     border: none;
     padding: 5px 10px;
+    font-weight: 600;
 }
 
-.pizza-data {
-    font-size: .75rem;
-    text-align: justify;
-    padding: 0 10px;
+.message {
+    color: red;
+    font-weight: 900;
+    text-align: center;
 }

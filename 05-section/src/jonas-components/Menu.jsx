@@ -48,17 +48,29 @@ const pizzaData = [
 import Pizza from "./Pizza"
 
 const Menu = () => {
+
+    const pizza = pizzaData;
+    // const pizza = []; // 0
+
+    const numOfPizzas = pizza.length;
+
     return <main className='menu'>
         <h1>Our Menu</h1>
-        <p className='pizza-data'>Authentic Italian cuisine. 6 creative dishes to choose from, All from our stone oven, all organic, all delicious.</p>
-        <div>
-            {pizzaData.map(item => (
-                <Pizza
-                    pizzaObj={item}
-                    key={item.name}
-                />
-            ))}
-        </div>
+        {numOfPizzas > 0 &&
+            <small style={{ textAlign: "center" }}>Authentic Italian cuisine. 6 creative dishes to choose from, All from our stone oven, all organic, all delicious.</small>
+        }
+
+        {numOfPizzas > 0 ?
+            <div className='main-menu'>
+                {pizzaData.map(item => (
+                    <Pizza
+                        pizzaObj={item}
+                        key={item.name}
+                    />
+                ))}
+            </div>
+            : <p className='message'>We're fixing this, please comeback later.</p>
+        }
 
         {/* <Pizza
             photo="/pizzas/focaccia.jpg"
@@ -96,7 +108,7 @@ const Menu = () => {
             ingredients="Tomato, mozarella, ham, aragula, and burrata cheese"
             price={18}
         /> */}
-    </main>
+    </main >
 }
 
 export default Menu

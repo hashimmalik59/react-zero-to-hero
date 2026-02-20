@@ -7,7 +7,7 @@ import React from 'react'
 // import Menu1 from './components/Menu1'
 // import Bulb from './practice-components/Bulb'
 // import Ticket from './practice-components/Ticket'
-import IsDrive from './practice-components/IsDrive'
+// import IsDrive from './practice-components/IsDrive'
 
 // CSS
 import "./App.css"
@@ -26,7 +26,7 @@ function App() {
             <Menu1 /> */}
             {/* <Bulb status="on" /> */}
             {/* <Ticket age={17} basePrice={100} /> */}
-            <IsDrive name="Hashim" age={19} />
+            {/* <IsDrive name="Hashim" age={19} /> */}
             <Header />
             <Menu />
             <Footer />
