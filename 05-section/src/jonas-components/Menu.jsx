@@ -54,61 +54,63 @@ const Menu = () => {
 
     const numOfPizzas = pizza.length;
 
-    return <main className='menu'>
-        <h1>Our Menu</h1>
-        {numOfPizzas > 0 &&
-            <small style={{ textAlign: "center" }}>Authentic Italian cuisine. 6 creative dishes to choose from, All from our stone oven, all organic, all delicious.</small>
-        }
+    return <>
+        <main className='menu'>
+            <h1>Our Menu</h1>
+            {numOfPizzas > 0 &&
+                <small style={{ textAlign: "center" }}>Authentic Italian cuisine. 6 creative dishes to choose from, All from our stone oven, all organic, all delicious.</small>
+            }
 
-        {numOfPizzas > 0 ?
-            <div className='main-menu'>
-                {pizzaData.map(item => (
-                    <Pizza
-                        pizzaObj={item}
-                        key={item.name}
-                    />
-                ))}
-            </div>
-            : <p className='message'>We're fixing this, please comeback later.</p>
-        }
+            {numOfPizzas > 0 ?
+                <div className='main-menu'>
+                    {pizzaData.map(item => (
+                        <Pizza
+                            pizzaObj={item}
+                            key={item.name}
+                        />
+                    ))}
+                </div>
+                : <p className='message'>We're fixing this, please comeback later.</p>
+            }
 
-        {/* <Pizza
+            {/* <Pizza
             photo="/pizzas/focaccia.jpg"
             name="Pizza Focaccia"
             ingredients="Bread with italian olive oil and rosemary"
             price={10}
-        />
-        <Pizza
+            />
+            <Pizza
             photo="pizzas/margherita.jpg"
             name="Pizza Margerita"
             ingredients="Tomato and mozarella"
             price={10}
-        />
-        <Pizza
+            />
+            <Pizza
             photo="pizzas/spinaci.jpg"
             name="Pizza Spinachi"
             ingredients="Tomato, mozarella, spinach, and ricotta cheese"
             price={12}
-        />
-        <Pizza
+            />
+            <Pizza
             photo="pizzas/funghi.jpg"
             name="Pizza Funghi"
             ingredients="Tomato, mozarella, mushrooms, and onion"
             price={12}
-        />
-        <Pizza
+            />
+            <Pizza
             photo="pizzas/salamino.jpg"
             name="Pizza Salamino"
             ingredients="Tomato, mozarella, and pepperoni"
             price={15}
-        />
-        <Pizza
+            />
+            <Pizza
             photo="pizzas/prosciutto.jpg"
             name="Pizza Prosciutto"
             ingredients="Tomato, mozarella, ham, aragula, and burrata cheese"
             price={18}
-        /> */}
-    </main >
+            /> */}
+        </main >
+    </>
 }
 
 export default Menu
