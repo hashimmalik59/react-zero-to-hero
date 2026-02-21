@@ -4,15 +4,14 @@ const Pizza = ({ pizzaObj }) => {
 
     return (
         <>
-            <div className='pizza'>
+            <div className={`pizza ${pizzaObj.soldOut ? "sold-out" : ""}`}>
                 <img src={pizzaObj.photoName} alt={pizzaObj.name} width={"100px"} />
                 <div className='pizza-info'>
                     <h1>{pizzaObj.name}</h1>
                     <p>{pizzaObj.ingredients}</p>
-                    <span>{pizzaObj.price + 3}</span>
-                    <span>{pizzaObj.soldOut}</span>
+                    <span>{pizzaObj.soldOut ? "SOLD OUT" : pizzaObj.price}</span>
                 </div>
-            </div>
+            </div >
         </>
     )
 }

@@ -13,7 +13,7 @@
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
 
 .main-menu {
@@ -39,6 +39,16 @@
     margin: 10px 0;
 }
 
+.pizza .pizza-info {
+    display: flex;
+    gap: 5px;
+}
+
+.pizza .pizza-info span {
+    font-size: .75rem;
+    font-weight: 600;
+}
+
 h1,
 p,
 span {
@@ -60,4 +70,18 @@ footer button {
     color: red;
     font-weight: 900;
     text-align: center;
+}
+
+small {
+    text-align: center;
+    padding: 0 100px;
+}
+
+.pizza.sold-out {
+    color: #888;
+}
+
+.pizza.sold-out img {
+    filter: grayscale(1);
+    opacity: .75;
 }

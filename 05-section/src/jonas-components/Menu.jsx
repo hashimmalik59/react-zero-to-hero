@@ -58,7 +58,7 @@ const Menu = () => {
         <main className='menu'>
             <h1>Our Menu</h1>
             {numOfPizzas > 0 &&
-                <small style={{ textAlign: "center" }}>Authentic Italian cuisine. 6 creative dishes to choose from, All from our stone oven, all organic, all delicious.</small>
+                <small>Authentic Italian cuisine. 6 creative dishes to choose from, All from our stone oven, all organic, all delicious.</small>
             }
 
             {numOfPizzas > 0 ?
