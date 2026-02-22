@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px grey;
+}
+
+h1 {
+    font-size: 1rem;
+}
+
+.number-parent {
+    display: flex;
+    gap: 100px;
+}
+
+.number-parent span {
+
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: #e6d7d7;
+}
+
+.button-parent {
+    display: flex;
+    gap: 150px;
+}
+
+.button-parent button {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #7950f2;
+    color: #fff;
+}
+
+.number-parent span.active {
+    background-color: #7950f2;
+    color: #fff;
+}
