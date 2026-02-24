@@ -48,3 +48,63 @@ h1 {
     background-color: #7950f2;
     color: #fff;
 }
+
+.light {
+    margin: 10px;
+    border: 1px solid #000;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.light .bulb {
+    height: 50px;
+    width: 50px;
+    padding: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px grey;
+}
+
+.light button {
+    padding: 5px 10px;
+}
+
+.counter {
+    box-shadow: 0 0 10px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.counter-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.close {
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #7950f2;
+    color: #fff;
+    position: absolute;
+    font-size: 1.5rem;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    border: none;
+}
