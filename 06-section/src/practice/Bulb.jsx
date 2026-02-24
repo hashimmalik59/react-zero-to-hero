@@ -1,25 +1,24 @@
 import React, { useState } from "react";
 
 const Bulb = () => {
-  const [light, setLight] = useState(false);
-
-  function handleLight() {
-    setLight(!light);
-  }
+  const [isLightOn, setIsLightOn] = useState(false);
 
   return (
     <>
       <div className="light">
         <span
           className="bulb"
-          style={{ backgroundColor: light ? "yellow" : "" }}
+          style={{ background: isLightOn ? "yellow" : "" }}
         >
-          {light}
+          {isLightOn}
         </span>
-        <button onClick={handleLight}>{light ? "OFF" : "ON"}</button>
+        <button onClick={() => setIsLightOn((prevLight) => !prevLight)}>
+          {isLightOn ? "OFF" : "ON"}
+        </button>
       </div>
     </>
   );
 };
 
 export default Bulb;
+gi;

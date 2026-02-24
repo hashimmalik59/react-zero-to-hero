@@ -3,6 +3,18 @@ import React, { useState } from "react";
 const Counter = () => {
   const [count, setCount] = useState(0);
 
+  // function delayCount() {
+  //   setTimeout(() => {
+  //     setCount((prevCount) => prevCount + 1);
+  //   }, 2000);
+  // }
+
+  // function delayCount() {
+  //   setTimeout(() => {
+  //     setCount(count + 1);
+  //   }, 2000);
+  // }
+
   return (
     <>
       <div className="counter">
@@ -20,7 +32,8 @@ const Counter = () => {
           </button>
         </div>
       </div>
-      <Number />
     </>
   );
 };
+
+export default Counter;
